@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uno Serato | Portfolio</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+        <!-- Icons -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="nav-bar" id="nav-bar">
+            <a href="#hero-section">
+                <img class="logo" src="res/logo-white.png" alt="LOGO">
+            </a>
+
+            <!-- Hamburger button -->
+            <button class="hamburger" id="hamburger"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!-- ================================== HERO SECTION ================================== -->
+        <a href="#hero-section" id="to-top-btn" aria-label="Back to top">
+            <i class="bi bi-arrow-up-circle-fill"></i>
+        </a>
+        <section id="hero-section" class="hero-section">
+            <div id="particles-js"></div>
+            <div class="main">
+                <div class="left-hero">
+                    <h4
+                        style="opacity: 0.7; font-size:clamp(0.8rem,1.5vw, 1.2rem);">Hi,
+                        I am</h4>
+                    <h1>Uno Serato</h1>
+                    <h2>Web and Game Developer</h2>
+                    <div class="social-links">
+                        <a href="#"
+                            onclick="window.open('https://github.com/unoserato')"><i
+                                class="bi bi-github"></i></a>
+                        <a href="#"
+                            onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=unoysmael.serato@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Uno%2C%0A%0AI%20saw%20your%20portfolio.'); return false;">
+                            <i class="bi bi-envelope-at-fill"></i></a>
+                        <a href="#"
+                            onclick="window.open('https://www.linkedin.com/in/uno-serato-3ba385334/')">
+                            <i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="right-hero">
+                    <div class="portrait-wrapper">
+                        <img src="res/portrait.png" class="portrait"
+                            id="portrait" alt="portrait">
+                        <div class="portrait-overlay"></div>
+                    </div>
+                    <button class="btn btn-outline-light resume-btn">
+                        View my resume
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================== PROJECTS SECTION ================================== -->
+        <section id="projects" class="projects-section">
+            <div class="featured-projects">
+                <p>FEATURED PROJECTS</p>
+            </div>
+
+            <div class="next-project-wrapper">
+                <button class="btn next-project-btn prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="btn next-project-btn next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="projects-wrapper">
+                <div class="project" id="project1">
+                    <div class="overlay">
+                        <p class="title">Debugventure</p>
+                        <button class="btn btn-primary learn-more"
+                            data-bs-toggle="modal"
+                            data-bs-target="#project1Modal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project" id="project2">
+                    <div class="overlay">
+                        <p class="title">Barangay Management System</p>
+                        <button class="btn btn-primary learn-more"
+                            data-bs-toggle="modal"
+                            data-bs-target="#project2Modal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project" id="project3">
+                    <div class="overlay">
+                        <p class="title">Local Music Player</p>
+                        <button class="btn btn-primary learn-more"
+                            data-bs-toggle="modal"
+                            data-bs-target="#project3Modal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project" id="project4">
+                    <div class="overlay">
+                        <p class="title">My Pet Simulator</p>
+                        <button class="btn btn-primary learn-more"
+                            data-bs-toggle="modal"
+                            data-bs-target="#project4Modal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================================== ABOUT SECTION ================================== -->
+        <section id="about" class="about-section">
+            <div class="left-about">
+                <img src="res/about-portrait.png" alt="portrait"
+                    class="about-portrait">
+            </div>
+            <div class="right-about">
+                <div class="right-contents">
+                    <p class="title">Web and Game Developer</p>
+                    <p>
+                        I am a student web and game developer with hands-on
+                        experience creating interactive projects ranging from
+                        web-based systems to games. I enjoy transforming ideas
+                        into
+                        functional solutions, combining creativity with
+                        technical
+                        problem-solving. As I continue to grow my skills, I
+                        focus on
+                        building projects that are practical, engaging, and
+                        showcase
+                        my development journey.
+                    </p>
+                    <span class="tech-stack-icons">
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                        <i class="devicon-java-plain-wordmark colored"></i>
+                        <i class="devicon-python-plain-wordmark colored"></i>
+                        <i class="devicon-csharp-plain-wordmark colored"></i>
+                        <i class="devicon-flask-original-wordmark colored"></i>
+                        <i class="devicon-mysql-plain-wordmark colored"></i>
+                        <i
+                            class="devicon-postgresql-plain-wordmark colored"></i>
+                        <i class="devicon-illustrator-plain colored"></i>
+                        <i class="devicon-aftereffects-plain colored"></i>
+                        <i class="devicon-photoshop-plain colored"></i>
+                        <i class="devicon-canva-original"></i>
+                        <i class="devicon-figma-plain colored"></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================== CONTACTS SECTION ================================== -->
+        <section id="contacts" class="contacts-section">
+            <div class="contacts-container">
+
+                <!-- Left: Email Me Card -->
+                <div class="contact-card">
+                    <h2>Email Me</h2>
+                    <p>If you’d like to get in touch, send me a quick message
+                        below.</p>
+                    <form onsubmit="sendMail(event)" class="contact-form">
+                        <input type="text" id="name" placeholder="Your Name"
+                            required>
+                        <input type="email" id="email" placeholder="Your Email"
+                            required>
+                        <textarea id="message" placeholder="Your Message"
+                            rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Right: Contact Info Cards -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h4>Email</h4>
+                        <div class="info-row">
+                            <p id="email-text">unoysmael.serato@gmail.com</p>
+                            <button class="copy-btn"
+                                onclick="copyToClipboard('email-text')">
+                                <i class="bi bi-copy"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Phone</h4>
+                        <div class="info-row">
+                            <p id="phone-text">+63 949 958 2545</p>
+                            <button class="copy-btn"
+                                onclick="copyToClipboard('phone-text')"><i
+                                    class="bi bi-copy"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Location</h4>
+                        <div class="info-row">
+                            <p id="location-text">Siniloan, Laguna
+                                Philippines</p>
+                            <button class="copy-btn"
+                                onclick="openLocation('location-text')">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <p>Copyright © 2025 Uno Serato. All rights reserved</p>
+        </section>
+
+        <!-- ================================== MODALS ================================== -->
+        <!-- Project 1 Modal -->
+        <div class="modal fade" id="project1Modal" tabindex="-1"
+            aria-hidden="true">
+            <div
+                class="modal-dialog modal-dialog-centered modal-lg custom-modal-dialog">
+                <div class="modal-content custom-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Debugventure</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body custom-modal-body">
+                        <p>
+                            Debugventure is a 2D Java platformer game where the
+                            player takes on the role of a programmer
+                            who must navigate through levels filled with coding
+                            bugs and challenges.
+                        </p>
+
+                        <div class="project-details mt-3">
+                            <p><strong>Role:</strong> Game Developer (Java,
+                                Graphics, Level Design)</p>
+                            <p><strong>Collaborators:</strong> N/A</p>
+                            <p><strong>Languages Used:</strong> Java</p>
+                        </div>
+
+                        <p>Snapshots:</p>
+                        <img src="res/project1-preview.png"
+                            class="img-fluid rounded mb-3"
+                            alt="Debugventure Screenshot">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/unoserato/debugventure"
+                            target="_blank" class="btn btn-primary">
+                            <i class="bi bi-github"></i> View on GitHub
+                        </a>
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 Modal -->
+        <div class="modal fade" id="project2Modal" tabindex="-1"
+            aria-hidden="true">
+            <div
+                class="modal-dialog modal-dialog-centered modal-lg custom-modal-dialog">
+                <div class="modal-content custom-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Barangay Management System</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body custom-modal-body">
+                        <p>
+                            A web-based system for managing community records,
+                            services, and resident information.
+                        </p>
+
+                        <div class="project-details mt-3">
+                            <p><strong>Role:</strong> Full-stack Developer
+                                (Frontend, Backend, Database, UI Designer)</p>
+                            <p><strong>Collaborators:</strong> Joshua Lontok (UI
+                                Designer, Front-end Developer)</p>
+                            <p><strong>Languages Used:</strong> HTML, CSS,
+                                JavaScript, Bootstrap</p>
+                        </div>
+
+                        <p>Snapshots:</p>
+                        <img src="res/project2-preview.png"
+                            class="img-fluid rounded mb-3" alt="BMS Screenshot">
+                    </div>
+                    <div class="modal-footer">
+                        <a
+                            href="https://github.com/unoserato/barangay-management-system"
+                            target="_blank" class="btn btn-primary">
+                            <i class="bi bi-github"></i> View on GitHub
+                        </a>
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 Modal -->
+        <div class="modal fade" id="project3Modal" tabindex="-1"
+            aria-hidden="true">
+            <div
+                class="modal-dialog modal-dialog-centered modal-lg custom-modal-dialog">
+                <div class="modal-content custom-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Local Music Player</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body custom-modal-body">
+                        <p>
+                            A lightweight desktop music player with playlist
+                            support and a minimal UI.
+                        </p>
+
+                        <div class="project-details mt-3">
+                            <p><strong>Role:</strong> Desktop App Developer</p>
+                            <p><strong>Collaborators:</strong> N/A</p>
+                            <p><strong>Languages Used:</strong> C#</p>
+                        </div>
+
+                        <p>Snapshots:</p>
+                        <img src="res/project3.png"
+                            class="img-fluid rounded mb-3"
+                            alt="Local Music Player Preview">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-github"></i> View on GitHub
+                        </a>
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 Modal -->
+        <div class="modal fade" id="project4Modal" tabindex="-1"
+            aria-hidden="true">
+            <div
+                class="modal-dialog modal-dialog-centered modal-lg custom-modal-dialog">
+                <div class="modal-content custom-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">My Pet Simulator</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body custom-modal-body">
+                        <p>
+                            A casual pet simulator game with feeding, playing,
+                            and simple AI behaviors.
+                        </p>
+
+                        <div class="project-details mt-3">
+                            <p><strong>Role:</strong> Game Developer</p>
+                            <p><strong>Collaborators:</strong> N/A</p>
+                            <p><strong>Languages Used:</strong> C#</p>
+                        </div>
+
+                        <p>Snapshots:</p>
+                        <img src="res/project4-preview0.png"
+                            class="img-fluid rounded mb-3"
+                            alt="Pet Simulator Preview">
+                        <img src="res/project4-preview1.png"
+                            class="img-fluid rounded mb-3"
+                            alt="Pet Simulator Preview">
+                        <img src="res/project4-preview2.png"
+                            class="img-fluid rounded mb-3"
+                            alt="Pet Simulator Preview">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-github"></i> View on GitHub
+                        </a>
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
